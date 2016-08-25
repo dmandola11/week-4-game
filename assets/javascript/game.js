@@ -23,7 +23,7 @@ var losses = 0;
  var scoreSet = $("#score");
  var goalSet = $("#goal");
 
-//on page  set random number between 19-120 for buttons and set score to 0
+//on page  set random number between 19-120 for buttons and set score, wins, losses to 0
 function initializeGame() {
 		winSet.html(wins);
 		lossSet.html(losses);
@@ -32,10 +32,18 @@ function initializeGame() {
 };
 
 initializeGame();
-//console.log(initializeGame)
 
 // on click of crystal add its value to score
+$(".crystal").click(function(event){
+	var crystal = event.target.id;
+	console.log(crystal);
 
+	if(crystal == "red" || "yllw" || "prpl" || "grn"){
+			startGame.score = startGame.green;
+		};
+	console.log(startGame.score);
+	scoreSet.html(startGame.score); 
+})
 //tally wins/losses
 
 //restart game
