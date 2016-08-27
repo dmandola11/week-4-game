@@ -2,6 +2,9 @@
 .container{
 	background-color: #e1e91f;
 }
+h1{
+	font-family: 'sigmar one', sans serif;
+}
 .row-centered{
 	text-align: center;
 }
