@@ -49,9 +49,30 @@ $(".crystal").click(function(event){
 		}
 	console.log(startGame.score);
 	scoreSet.html(startGame.score); 
-})
-//tally wins/losses
 
-//restart game
+// function to reset game
+function reset(){
+	startGame.score = 0
+	startGame.goal = Math.floor(Math.random() * 120) + 19;
+	startGame.green = Math.floor(Math.random() * 12) + 1;
+	startGame.purple = Math.floor(Math.random() * 12) + 1;
+	startGame.yellow = Math.floor(Math.random() * 12) + 1;
+	startGame.red = Math.floor(Math.random() * 12) + 1;
+
+	initializeGame();
+};
+
+//set parameters for winning and losing and restart game
+if(startGame.score == startGame.goal){
+	alert("YOU WON! PLAY AGAIN");
+	wins++;
+	reset();
+} else if(startGame.score > startGame.goal){
+	alert("YOU LOST! PLAY AGAIN");
+	losses++;
+	reset();
+};
+
+});
 
 })
