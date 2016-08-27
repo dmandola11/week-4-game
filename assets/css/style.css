@@ -42,3 +42,9 @@ background-color: unset;
 	font-size: 30px;
     font-weight: 600;
 }
+
+@media screen and (max-width: 640px) {
+	.glpanel{
+		left: unset;
+	}
+}
