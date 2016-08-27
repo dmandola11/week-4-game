@@ -1,58 +1,80 @@
+.container {
+    background-color: #e1e91f;
+}
 
-.container{
-	background-color: #e1e91f;
+h1 {
+    font-family: 'sigmar one', sans serif;
 }
-h1{
-	font-family: 'sigmar one', sans serif;
+
+.row-centered {
+    text-align: center;
 }
-.row-centered{
-	text-align: center;
+
+.gems {
+    border: none;
+    padding-bottom: 20px;
+    background-color: transparent;
 }
-.gems{
-	border: none;
-	padding-bottom: 20px;
-	background-color: transparent;
-}
+
 .gems:focus {
-	outline:0;
-	border: none;
-	background-color: transparent;
+    outline: 0;
+    border: none;
+    background-color: transparent;
 }
+
 .gems:active {
-outline: none;
-border: none;
-background-color: transparent;
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
+
 .gems:visited {
-	outline: none;
-	border: none;
-	background-color: transparent;
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
+
 .gems:hover {
-	background-color: transparent;
+    background-color: transparent;
 }
-.panel{
-	width: auto;
+
+.panel {
+    width: auto;
 }
-.glpanel{
-	width: 143px;
+
+.glpanel {
+    width: 143px;
     position: relative;
     left: 145px;
 }
-.scrpanel{
-	width: 138px;
+
+.scrpanel {
+    width: 138px;
 }
-#goal{
-	font-size: 30px;
-    font-weight: 600;
-}
-#score{
-	font-size: 30px;
+
+#goal {
+    font-size: 30px;
     font-weight: 600;
 }
 
+#score {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.winpanel{
+	width: 143px;
+    position: relative;
+    left: 145px;
+
+}
+
+.losspanel{
+	width: 138px;
+}
+
 @media screen and (max-width: 640px) {
-	.glpanel{
-		left: unset;
-	}
+    .glpanel {
+        left: unset;
+    }
 }
