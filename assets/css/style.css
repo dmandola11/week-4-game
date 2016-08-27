@@ -1,27 +1,32 @@
+
+.container{
+	background-color: #e1e91f;
+}
 .row-centered{
 	text-align: center;
 }
 .gems{
 	border: none;
 	padding-bottom: 20px;
+	background-color: transparent;
 }
 .gems:focus {
 	outline:0;
 	border: none;
-	background-color: unset;
+	background-color: transparent;
 }
 .gems:active {
 outline: none;
 border: none;
-background-color: unset;
+background-color: transparent;
 }
 .gems:visited {
 	outline: none;
 	border: none;
-	background-color: unset;
+	background-color: transparent;
 }
 .gems:hover {
-	background-color: unset;
+	background-color: transparent;
 }
 .panel{
 	width: auto;
