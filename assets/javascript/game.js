@@ -11,7 +11,7 @@ $(document).ready(function() {
  	score: 0,
  };
 
-console.log(startGame)
+console.log(startGame);
 
 //set wins and losses that will keep tally after every game 
 var wins = 0;
@@ -38,9 +38,15 @@ $(".crystal").click(function(event){
 	var crystal = event.target.id;
 	console.log(crystal);
 
-	if(crystal == "red" || "yllw" || "prpl" || "grn"){
-			startGame.score = startGame.green;
-		};
+	if (crystal == "red") {
+			startGame.score += startGame.red;
+		} else if (crystal == "grn") {
+			startGame.score += startGame.green; 
+		} else if (crystal == "prpl") {
+			startGame.score += startGame.purple;
+		} else if (crystal == "yllw") {
+			startGame.score += startGame.yellow;
+		}
 	console.log(startGame.score);
 	scoreSet.html(startGame.score); 
 })
