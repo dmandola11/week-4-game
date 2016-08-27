@@ -77,4 +77,8 @@ h1 {
     .glpanel {
         left: unset;
     }
+
+    .winpanel{
+    	left: unset;
+    }
 }
